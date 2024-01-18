@@ -9,19 +9,23 @@ import SwiftUI
 
 struct DetailView: View {
     let scrum: DailyScrum
+
+
     var body: some View {
-        List{
-            Section(header: Text("Meeting Info")){
-                Label("Start Meeting", systemImage: "timer")
-                    .font(.headline)
-                    .foregroundColor(.accentColor)
-                HStack{
+        List {
+            Section(header: Text("Meeting Info")) {
+                NavigationLink(destination: MeetingView()) {
+                    Label("Start Meeting", systemImage: "timer")
+                        .font(.headline)
+                        .foregroundColor(.accentColor)
+                }
+                HStack {
                     Label("Length", systemImage: "clock")
                     Spacer()
                     Text("\(scrum.lengthInMinutes) minutes")
                 }
                 .accessibilityElement(children: .combine)
-                HStack{
+                HStack {
                     Label("Theme", systemImage: "paintpalette")
                     Spacer()
                     Text(scrum.theme.name)
@@ -31,15 +35,17 @@ struct DetailView: View {
                         .cornerRadius(4)
                 }
                 .accessibilityElement(children: .combine)
-                Section(header: Text("Ateendees")){
-                    ForEach(scrum.attendees){ attendee in
-                        Label(attendee.name, systemImage: "person")
-                    }
+            }
+            Section(header: Text("Attendees")) {
+                ForEach(scrum.attendees) { attendee in
+                    Label(attendee.name, systemImage: "person")
                 }
             }
         }
+        .navigationTitle(scrum.title)
     }
 }
+
 
 
 
