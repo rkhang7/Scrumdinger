@@ -17,6 +17,8 @@
 		0C10D2BC2B60B05300AAE293 /* ScrumProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C10D2BB2B60B05300AAE293 /* ScrumProgressViewStyle.swift */; };
 		0C10D2BE2B60BCE600AAE293 /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C10D2BD2B60BCE600AAE293 /* ScrumTimer.swift */; };
 		0C10D2C02B60E42000AAE293 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C10D2BF2B60E42000AAE293 /* MeetingFooterView.swift */; };
+		0C10D2C22B60FC8100AAE293 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C10D2C12B60FC8000AAE293 /* AVPlayer+Ding.swift */; };
+		0C10D2C42B6101CC00AAE293 /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C10D2C32B6101CC00AAE293 /* NewScrumSheet.swift */; };
 		0C7316CE2B5A16FF00BCC5A4 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7316CD2B5A16FF00BCC5A4 /* DetailEditView.swift */; };
 		0C7316D32B5A4C7500BCC5A4 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7316D22B5A4C7500BCC5A4 /* ThemeView.swift */; };
 		0C7316D52B5A4EDF00BCC5A4 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7316D42B5A4EDF00BCC5A4 /* ThemePicker.swift */; };
@@ -38,6 +40,8 @@
 		0C10D2BB2B60B05300AAE293 /* ScrumProgressViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrumProgressViewStyle.swift; sourceTree = "<group>"; };
 		0C10D2BD2B60BCE600AAE293 /* ScrumTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
 		0C10D2BF2B60E42000AAE293 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
+		0C10D2C12B60FC8000AAE293 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
+		0C10D2C32B6101CC00AAE293 /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 		0C7316CD2B5A16FF00BCC5A4 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		0C7316D22B5A4C7500BCC5A4 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		0C7316D42B5A4EDF00BCC5A4 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 		0C0E38862B5781F3004FA98C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0C10D2C12B60FC8000AAE293 /* AVPlayer+Ding.swift */,
 				0C0E38872B578220004FA98C /* Theme.swift */,
 				0C0E38892B578B7E004FA98C /* DailyScrum.swift */,
 				0C10D2BD2B60BCE600AAE293 /* ScrumTimer.swift */,
@@ -118,6 +123,7 @@
 				0C7316D42B5A4EDF00BCC5A4 /* ThemePicker.swift */,
 				0C8EAF262B5FA33400E5A821 /* MeetingHeaderView.swift */,
 				0C10D2BF2B60E42000AAE293 /* MeetingFooterView.swift */,
+				0C10D2C32B6101CC00AAE293 /* NewScrumSheet.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 				0CEB4F032B5901E100BC3001 /* DetailView.swift in Sources */,
 				0C8EAF272B5FA33400E5A821 /* MeetingHeaderView.swift in Sources */,
 				0C7316CE2B5A16FF00BCC5A4 /* DetailEditView.swift in Sources */,
+				0C10D2C42B6101CC00AAE293 /* NewScrumSheet.swift in Sources */,
 				0CCA57C32B58BEF6000FB27A /* TrailingIconLabelStyle.swift in Sources */,
 				0C0E38882B578220004FA98C /* Theme.swift in Sources */,
 				0CCA57C52B58D08A000FB27A /* ScrumsView.swift in Sources */,
@@ -207,6 +214,7 @@
 				0C0E38792B576F62004FA98C /* ScrumdingerApp.swift in Sources */,
 				0C7316D32B5A4C7500BCC5A4 /* ThemeView.swift in Sources */,
 				0C0E388C2B578E70004FA98C /* CardView.swift in Sources */,
+				0C10D2C22B60FC8100AAE293 /* AVPlayer+Ding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
